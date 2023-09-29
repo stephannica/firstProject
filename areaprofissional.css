@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9ebfc;
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+/* Estilo para o texto */
+div{
+    position: relative;
+    text-align: justify;
+    margin: 8% 25%;
+}
+
+div li{
+    text-align: left;
+}
+
+/* Estilos das imagens do site */
+#EuPNG{
+    position: absolute;
+    bottom: 100%;
+    left: 78%;
+    margin: 0 auto;
+    width: 22%;
+}
+
+#Eu2{
+    width: 80%;
+    position: relative;
+    top: 2%;
+    left: 10%;
+    border-style: solid;
+    border-color: #7153a7;
+}
+
+#menu_icon{
+    width: 14%;
+}
+
+#area-profissional{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: -7.5%;
+    border: #9e82d3 solid;
+}
+
+#GitHub{
+    width: 12%;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 13%;
+}
+
+#Instagram{
+    width: 12%;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 13%;
+}
+
+#LinkedIn{
+    width: 12%;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 13%;
+}
+
+/* Estilo da barra de nav do lado */
+.sidebar{
+    background-color: #C7B0EE;
+    border-right: #7153a7 solid;
+    width: 290px;
+    height: 101%;
+    top: 74px; 
+    left: -290px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: all .7s;
+}
+
+.sidebar ul h1{
+    color: black;
+    font-size: 21px;
+    position: relative;
+    top: 26%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sidebar ul li{
+    color: black;
+    position: relative;
+    top: 36%;
+    margin-left: 30px;   
+}
+
+input[type="button"]{
+    background-image: url(./fotos/Button.jpg);
+    border-color: #9b77df;
+    margin-top: 20px;
+    margin-left: 9.5%;
+    width: 80%;
+    height: 100%;
+}
+
+a{
+    position: relative;
+    top: 11%;
+}
+
+#menu_icon:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+input[type="checkbox"]:checked ~ .sidebar{
+    transform: translateX(290px);
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    width: 350px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+/* Estilo para a barra de nav da parte de cima */
+.topnav{
+    background-color: #C7B0EE;
+    height: 75px;
+    width: 100%;
+}
+
+.topnav ul{
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+
+.topnav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 5px;
+}
+
+.topnav ul li a{
+    color:white;
+    font-size: 20px;
+    padding: 7px 17px;
+    text-transform: uppercase;
+}
+
+li a.active, .topnav li a:hover{
+    background: #BE94D6;
+   transition: .7s;
+}
+/* Estilos para o aside */
+aside{
+    position: fixed;
+    left: 83%;
+    background-color: #ffcce5;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px;
+    max-width: 300px;
+    color: antiquewhite;
+}
+
+aside a {
+    color: #7153a7;
+    text-decoration: none;
+  }
+  
+  aside a:hover {
+    text-decoration: underline;
+  }
+
+/* Estilos para o rodapé */
+footer{
+    background-color: #C7B0EE;
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+ /* Estilo texto footer */
+    text-align: center; 
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: 90%;
+}
